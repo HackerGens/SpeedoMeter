@@ -1,4 +1,4 @@
-package project.speedo.vehicletracker;
+package project.speedo.meter;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;

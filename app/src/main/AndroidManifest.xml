@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="project.speedo.vehicletracker">
+    package="project.speedo.meter">
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -24,15 +24,15 @@
             android:name="org.apache.http.legacy"
             android:required="false" />
 
-        <activity android:name="project.speedo.vehicletracker.MainActivity"/>
+        <activity android:name="project.speedo.meter.MainActivity"/>
 
-        <activity android:name="project.speedo.vehicletracker.RegisterActivity"
+        <activity android:name="project.speedo.meter.RegisterActivity"
             android:theme="@style/NoActionBar"
             />
-        <activity android:name="project.speedo.vehicletracker.LoginActivity"
+        <activity android:name="project.speedo.meter.LoginActivity"
             android:theme="@style/NoActionBar"/>
 
-        <activity android:name="project.speedo.vehicletracker.SplashActivity"
+        <activity android:name="project.speedo.meter.SplashActivity"
             android:theme="@style/NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -45,7 +45,7 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name="project.speedo.vehicletracker.SettingsActivity"
+            android:name="project.speedo.meter.SettingsActivity"
             android:label="@string/action_settings" />
 
     </application>

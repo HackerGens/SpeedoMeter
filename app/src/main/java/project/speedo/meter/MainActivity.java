@@ -1,4 +1,4 @@
-package project.speedo.vehicletracker;
+package project.speedo.meter;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;

@@ -1,4 +1,4 @@
-package project.speedo.vehicletracker;
+package project.speedo.meter;
 
 import android.content.Context;
 import androidx.test.platform.app.InstrumentationRegistry;
