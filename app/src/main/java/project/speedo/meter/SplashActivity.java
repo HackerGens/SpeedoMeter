@@ -104,17 +104,22 @@ public class SplashActivity extends AppCompatActivity{
                 switch (status.getStatusCode()) {
                     case LocationSettingsStatusCodes.SUCCESS:
 
-                        if (SharedHelper.getKey(getApplicationContext(), "token").equalsIgnoreCase("")) {
-                            i = new Intent(SplashActivity.this, LoginActivity.class);
-                            startActivity(i);
-                            overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
-                            finish();
-                        } else {
-                            i = new Intent(SplashActivity.this, MainActivity.class);
-                            startActivity(i);
-                            overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
-                            finish();
-                        }
+                        i = new Intent(SplashActivity.this, MainActivity.class);
+                        startActivity(i);
+                        overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
+                        finish();
+
+//                        if (SharedHelper.getKey(getApplicationContext(), "token").equalsIgnoreCase("")) {
+//                            i = new Intent(SplashActivity.this, LoginActivity.class);
+//                            startActivity(i);
+//                            overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
+//                            finish();
+//                        } else {
+//                            i = new Intent(SplashActivity.this, MainActivity.class);
+//                            startActivity(i);
+//                            overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
+//                            finish();
+//                        }
 
                         // updateGPSStatus("GPS is Enabled in your device");
                         break;
@@ -144,17 +149,23 @@ public class SplashActivity extends AppCompatActivity{
                         updateGPSStatus("GPS is Enabled in your device");
 
                         if (JsonUtils.isNetworkAvailable(SplashActivity.this)) {
-                            if (SharedHelper.getKey(getApplicationContext(), "token").equalsIgnoreCase("")) {
-                                i = new Intent(SplashActivity.this, LoginActivity.class);
-                                startActivity(i);
-                                overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
-                                finish();
-                            } else {
-                                i = new Intent(SplashActivity.this, MainActivity.class);
-                                startActivity(i);
-                                overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
-                                finish();
-                            }
+//                            if (SharedHelper.getKey(getApplicationContext(), "token").equalsIgnoreCase("")) {
+//                                i = new Intent(SplashActivity.this, LoginActivity.class);
+//                                startActivity(i);
+//                                overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
+//                                finish();
+//                            } else {
+//                                i = new Intent(SplashActivity.this, MainActivity.class);
+//                                startActivity(i);
+//                                overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
+//                                finish();
+//                            }
+
+                            i = new Intent(SplashActivity.this, MainActivity.class);
+                            startActivity(i);
+                            overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
+                            finish();
+
                         } else {
                             displayMessage("Oops! No internet connection");
                         }
